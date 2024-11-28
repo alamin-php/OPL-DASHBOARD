@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>One Pharma Expense Analysis</title>
+  </head>
+  <body>
+    <!-- start title header section  -->
+    <section class="container-fluid title-header my-4">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="custom-primary m-0">One Pharma Expense Analysis</h2>
+          <p class="custom-gray fw-light">Welcome back, Sana!</p>
+        </div>
+      </div>
+    </section>
+    <!-- end title header section  -->
+
+    <!-- start national expense summary section  -->
+    <section class="container-fluid expense-summary my-4">
+      <div class="card shadow-sm border rounded p-3">
+        <div class="row">
+          <div class="col-md-9">
+            <p class="fw-light">National Expense</p>
+            <h2 class="m-0">TK.2500000</h2>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex flex-row justify-content-end gap-2">
+              <div class="btn-group">
+                <button
+                  class="btn btn-default border btn-sm dropdown-toggle fw-light"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="true"
+                >
+                  Data Filter
+                </button>
+                <div class="dropdown-menu p-4 mt-5">
+                  <div class="card">
+                    <h5>Dropdown body will go here</h5>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-sm btn-danger">
+                <i class="fa-solid fa-square-arrow-up-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end national expense summary section  -->
+
+    <!-- start location wise expense section  -->
+    <section class="container-fluid location-wise-expense my-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title d-flex justify-content-between">
+                <h4 class="fw-normal">National Expense Comparison</h4>
+                <div class="btn-group">
+                  <button
+                    class="btn btn-default border btn-sm dropdown-toggle fw-light"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="true"
+                  >
+                    Data Filter
+                  </button>
+                  <ul class="dropdown-menu p-3">
+                    <li class="fw-light fs-6 py-1">This Year</li>
+                    <li class="fw-light fs-6 py-1">This Month</li>
+                    <li class="fw-light fs-6 py-1">Previous Year</li>
+                    <li class="fw-light fs-6 py-1">Previous Month</li>
+                    <li class="fw-light fs-6 py-1">Custom Range</li>
+                  </ul>
+                </div>
+              </div>
+              <img src="images/expense_chart.png" class="w-100" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title d-flex justify-content-between">
+                <h4 class="fw-normal">Expense Location: Region</h4>
+                <div class="btn-group">
+                  <button
+                    class="btn btn-default border btn-sm dropdown-toggle fw-light"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="true"
+                  >
+                    Filter
+                  </button>
+                  <ul class="dropdown-menu p-3">
+                    <li class="fw-light fs-6 py-1">This Year</li>
+                    <li class="fw-light fs-6 py-1">This Month</li>
+                    <li class="fw-light fs-6 py-1">Previous Year</li>
+                    <li class="fw-light fs-6 py-1">Previous Month</li>
+                    <li class="fw-light fs-6 py-1">Custom Range</li>
+                  </ul>
+                </div>
+              </div>
+              <img src="images/location_table.png" class="w-100" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end location wise expense section  -->
+
+    <!-- start cost head section  -->
+    <section class="container-fluid location-wise-expense my-4">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title d-flex justify-content-between">
+                <h4 class="fw-normal">Expense Location: Region</h4>
+                <div class="btn-group">
+                  <button
+                    class="btn btn-default border btn-sm dropdown-toggle fw-light"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="true"
+                  >
+                    Filter
+                  </button>
+                  <ul class="dropdown-menu p-3">
+                    <li class="fw-light fs-6 py-1">This Year</li>
+                    <li class="fw-light fs-6 py-1">This Month</li>
+                    <li class="fw-light fs-6 py-1">Previous Year</li>
+                    <li class="fw-light fs-6 py-1">Previous Month</li>
+                    <li class="fw-light fs-6 py-1">Custom Range</li>
+                  </ul>
+                </div>
+              </div>
+              <img src="images/cost_head.png" class="w-100" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end cost head section  -->
+
+    <!-- start depot and expense report section  -->
+    <section class="container-fluid location-wise-expense my-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title d-flex justify-content-between">
+                <h4 class="fw-normal">National Expense Comparison</h4>
+                <div class="btn-group">
+                  <button
+                    class="btn btn-default border btn-sm dropdown-toggle fw-light"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="true"
+                  >
+                    Data Filter
+                  </button>
+                  <ul class="dropdown-menu p-3">
+                    <li class="fw-light fs-6 py-1">This Year</li>
+                    <li class="fw-light fs-6 py-1">This Month</li>
+                    <li class="fw-light fs-6 py-1">Previous Year</li>
+                    <li class="fw-light fs-6 py-1">Previous Month</li>
+                    <li class="fw-light fs-6 py-1">Custom Range</li>
+                  </ul>
+                </div>
+              </div>
+              <img src="images/depot_chart.png" class="w-100" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-title d-flex justify-content-between">
+                <h4 class="fw-normal">Expense Location: Region</h4>
+                <div class="btn-group">
+                  <button
+                    class="btn btn-default border btn-sm dropdown-toggle fw-light"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="true"
+                  >
+                    Filter
+                  </button>
+                  <ul class="dropdown-menu p-3">
+                    <li class="fw-light fs-6 py-1">This Year</li>
+                    <li class="fw-light fs-6 py-1">This Month</li>
+                    <li class="fw-light fs-6 py-1">Previous Year</li>
+                    <li class="fw-light fs-6 py-1">Previous Month</li>
+                    <li class="fw-light fs-6 py-1">Custom Range</li>
+                  </ul>
+                </div>
+              </div>
+              <img src="images/expense_overview_chart.png" class="w-100" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end depot and expense report section  -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

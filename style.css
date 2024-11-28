@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --custom-primary: #101828;
+  --custom-secondary: ##ED1C24;
+  --custom-gray: #475467;
+}
+body {
+  font-family: "Inter", sans-serif; /* Apply globally to the body */
+}
+
+.dropdown-menu-center {
+    position: fixed; /* Fix it to the viewport */
+    top: 50%; /* Move to the center vertically */
+    left: 50%; /* Move to the center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    width: 1324px; /* Optional: set width */
+    padding: 1.5rem; /* Add padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    background-color: white; /* Ensure background color is visible */
+    z-index: 1050; /* Ensure it appears on top */
+  }
