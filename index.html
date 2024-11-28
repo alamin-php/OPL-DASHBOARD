@@ -43,10 +43,9 @@
             <div class="d-flex flex-row justify-content-end gap-2">
               <div class="btn-group">
                 <button
-                  class="btn btn-default border btn-sm dropdown-toggle fw-light"
+                  class="btn btn-default border dropdown-toggle fw-light"
                   type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="true"
+                  data-bs-toggle="modal" data-bs-target="#staticBackdrop"
                 >
                   Data Filter
                 </button>
@@ -56,9 +55,90 @@
                   </div>
                 </div>
               </div>
-              <button type="button" class="btn btn-sm btn-danger">
+              <button type="button" class="btn btn-danger">
                 <i class="fa-solid fa-square-arrow-up-right"></i>
               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Data Filter</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- zone & region dropdown  -->
+              <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="seletZone" class="form-label">Zone</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select zone</option>
+                            <option value="dhaka">Dhaka</option>
+                            <option value="rangpur">Rangpur</option>
+                            <option value="barishal">Barishal</option>
+                          </select>
+                      </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="seletZone" class="form-label">Region</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select region</option>
+                            <option value="dhaka">Dhaka</option>
+                            <option value="rangpur">Rangpur</option>
+                            <option value="barishal">Barishal</option>
+                          </select>
+                      </div>
+                </div>
+              </div>
+              <!-- area & territory dropdown  -->
+              <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="seletZone" class="form-label">Area</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select area</option>
+                            <option value="dhaka">Dhaka</option>
+                            <option value="rangpur">Rangpur</option>
+                            <option value="barishal">Barishal</option>
+                          </select>
+                      </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="seletZone" class="form-label">Territory</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select territory</option>
+                            <option value="dhaka">Dhaka</option>
+                            <option value="rangpur">Rangpur</option>
+                            <option value="barishal">Barishal</option>
+                          </select>
+                      </div>
+                </div>
+              </div>
+              <!-- filter date  -->
+              <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="seletZone" class="form-label">From date</label>
+                        <input type="date" class="form-control">
+                      </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="seletZone" class="form-label">To date</label>
+                        <input type="date" class="form-control">
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer float-none">
+              <button type="button" class="btn btn-danger">Apply</button>
             </div>
           </div>
         </div>
@@ -76,7 +156,7 @@
                 <h4 class="fw-normal">National Expense Comparison</h4>
                 <div class="btn-group">
                   <button
-                    class="btn btn-default border btn-sm dropdown-toggle fw-light"
+                    class="btn btn-default border dropdown-toggle fw-light"
                     type="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="true"
@@ -103,7 +183,7 @@
                 <h4 class="fw-normal">Expense Location: Region</h4>
                 <div class="btn-group">
                   <button
-                    class="btn btn-default border btn-sm dropdown-toggle fw-light"
+                    class="btn btn-default border dropdown-toggle fw-light"
                     type="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="true"
@@ -135,23 +215,14 @@
             <div class="card-body">
               <div class="card-title d-flex justify-content-between">
                 <h4 class="fw-normal">Expense Location: Region</h4>
-                <div class="btn-group">
-                  <button
-                    class="btn btn-default border btn-sm dropdown-toggle fw-light"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="true"
-                  >
-                    Filter
-                  </button>
-                  <ul class="dropdown-menu p-3">
-                    <li class="fw-light fs-6 py-1">This Year</li>
-                    <li class="fw-light fs-6 py-1">This Month</li>
-                    <li class="fw-light fs-6 py-1">Previous Year</li>
-                    <li class="fw-light fs-6 py-1">Previous Month</li>
-                    <li class="fw-light fs-6 py-1">Custom Range</li>
-                  </ul>
-                </div>
+                <select name="" id="" class="form-control custom-select-width">
+                    <option value="">This Year (2024)</option>
+                    <option value="2024">This Year (2024)</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                </select>
               </div>
               <img src="images/cost_head.png" class="w-100" alt="" />
             </div>
@@ -169,22 +240,25 @@
             <div class="card-body">
               <div class="card-title d-flex justify-content-between">
                 <h4 class="fw-normal">National Expense Comparison</h4>
-                <div class="btn-group">
-                  <button
-                    class="btn btn-default border btn-sm dropdown-toggle fw-light"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="true"
-                  >
-                    Data Filter
-                  </button>
-                  <ul class="dropdown-menu p-3">
-                    <li class="fw-light fs-6 py-1">This Year</li>
-                    <li class="fw-light fs-6 py-1">This Month</li>
-                    <li class="fw-light fs-6 py-1">Previous Year</li>
-                    <li class="fw-light fs-6 py-1">Previous Month</li>
-                    <li class="fw-light fs-6 py-1">Custom Range</li>
-                  </ul>
+                <div>
+                    <button class="btn btn-default border"><i class="fa-solid fa-list-ul"></i></button>
+                    <div class="btn-group">
+                      <button
+                        class="btn btn-default border dropdown-toggle fw-light"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="true"
+                      >
+                        All Time
+                      </button>
+                      <ul class="dropdown-menu p-3">
+                        <li class="fw-light fs-6 py-1">This Year</li>
+                        <li class="fw-light fs-6 py-1">This Month</li>
+                        <li class="fw-light fs-6 py-1">Previous Year</li>
+                        <li class="fw-light fs-6 py-1">Previous Month</li>
+                        <li class="fw-light fs-6 py-1">Custom Range</li>
+                      </ul>
+                    </div>
                 </div>
               </div>
               <img src="images/depot_chart.png" class="w-100" alt="" />
@@ -196,22 +270,25 @@
             <div class="card-body">
               <div class="card-title d-flex justify-content-between">
                 <h4 class="fw-normal">Expense Location: Region</h4>
-                <div class="btn-group">
-                  <button
-                    class="btn btn-default border btn-sm dropdown-toggle fw-light"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="true"
-                  >
-                    Filter
-                  </button>
-                  <ul class="dropdown-menu p-3">
-                    <li class="fw-light fs-6 py-1">This Year</li>
-                    <li class="fw-light fs-6 py-1">This Month</li>
-                    <li class="fw-light fs-6 py-1">Previous Year</li>
-                    <li class="fw-light fs-6 py-1">Previous Month</li>
-                    <li class="fw-light fs-6 py-1">Custom Range</li>
-                  </ul>
+                <div>
+                    <button class="btn btn-default border"><i class="fa-solid fa-list-ul"></i></button>
+                    <div class="btn-group">
+                      <button
+                        class="btn btn-default border dropdown-toggle fw-light"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="true"
+                      >
+                        All Time
+                      </button>
+                      <ul class="dropdown-menu p-3">
+                        <li class="fw-light fs-6 py-1">This Year</li>
+                        <li class="fw-light fs-6 py-1">This Month</li>
+                        <li class="fw-light fs-6 py-1">Previous Year</li>
+                        <li class="fw-light fs-6 py-1">Previous Month</li>
+                        <li class="fw-light fs-6 py-1">Custom Range</li>
+                      </ul>
+                    </div>
                 </div>
               </div>
               <img src="images/expense_overview_chart.png" class="w-100" alt="" />
